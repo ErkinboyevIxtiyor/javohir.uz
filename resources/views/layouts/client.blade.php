@@ -20,13 +20,13 @@
     <header class="position-absolute w-100 text-white">
         <div class="container">
           <div class="logo">
-            <a href="#home">@axo<span class="text-primary">.me</span></a>
+            <a href="#home">MaxDev<span class="text-primary">.Photo</span></a>
           </div>
           <ul class="menus">
-            <li class="current"><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Work</a></li>
+            <li class="current"><a href="#services">Xizmatlar</a></li>
+            <li><a href="#portfolio">Biz haqimizda</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Aloqa</a></li>
             <li><a href="{{route('login')}}">Kirish</a></li>
           </ul>
           <div class="social-icons">

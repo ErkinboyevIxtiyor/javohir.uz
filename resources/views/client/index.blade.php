@@ -15,7 +15,7 @@
                 applications through carefully crafted code and user-centric
                 design.
               </p>
-              <a href="#contact" class="cf-btn"> Buyurtma berish </a>
+              <a href="{{route('login')}}" class="cf-btn"> Buyurtma berish </a>
               <div class="counter d-flex align-center content-space-between">
                 <div class="experence">
                   <h2><span class="count">7</span>+</h2>
@@ -224,20 +224,20 @@
       <section id="portfolio">
         <div class="container">
           <div class="section-title">
-            <p class="sub-title">My Portfolio</p>
+            <p class="sub-title">Bizning portfelimiz</p>
             <h2>
-              Showcasing <br />
-              some of my best work
+                Namoyish <br>
+                eng yaxshi ishlarimizdan ba'zilari
             </h2>
           </div>
           <div class="portfolio-container">
             <div class="filter-btn">
-              <a href="#" class="active" data-filter="*">All</a>
+              <a href="#" class="active" data-filter="*">Hammasi</a>
               <a href="#" data-filter=".youtube">Youtube</a>
               <a href="#" data-filter=".vimeo">Vimeo</a>
               <a href="#" data-filter=".soundcloud">Soundcloud</a>
-              <a href="#" data-filter=".popup">Images</a>
-              <a href="#" data-filter=".details">Detail</a>
+              <a href="#" data-filter=".popup">Rasnlar</a>
+              <a href="#" data-filter=".details">Tafsilot</a>
             </div>
             <div class="portfolio-items">
               <div class="item youtube">
@@ -271,23 +271,23 @@
                       <img src="{{asset("client/assets/images/portfolio/4.png")}}" alt="" />
                     </div>
                     <div class="des">
-                      <span>Details</span>
-                      <h4>Mobile Application</h4>
+                      <span>Tafsilotlar</span>
+                      <h4>Mobil ilova</h4>
                       <p>
-                        We live in a world where we need to move quickly and
-                        iterate on our ideas as flexibly as possible. Building
-                        mockups strikes the ideal balance between true-life
-                        representation of the end product and ease of
-                        modification.
+                        Biz tez harakat qilishimiz kerak bo'lgan dunyoda yashayapmiz
+                        g'oyalarimizni iloji boricha moslashuvchan tarzda takrorlang. Bino
+                        maketlar haqiqiy hayot o'rtasidagi ideal muvozanatni ta'minlaydi.
+                        yakuniy mahsulotning taqdimoti va qulayligi
+                        modifikatsiya.
                       </p>
                       <p>
-                        Mockups are useful both for the creative phase of the
-                        project - for instance when you're trying to figure out
-                        your user flows or the proper visual hierarchy - and the
-                        production phase when they will represent the target
-                        product. Making mockups a part of your creative and
-                        development process allows you to quickly and easily
-                        ideate.
+                        Maketlar ijodiy bosqich uchun ham foydalidir
+ loyiha - masalan, siz tushunishga harakat qilayotganingizda
+ sizning foydalanuvchi oqimlari yoki to'g'ri vizual ierarxiya - va
+ ishlab chiqarish bosqichi, ular maqsadni ifodalaydi
+ mahsulot. Maketlarni ijodingizning bir qismiga aylantirish va
+ ishlab chiqish jarayoni tez va osonlik bilan imkonini beradi
+ fikrlash.
                       </p>
                     </div>
                   </div>

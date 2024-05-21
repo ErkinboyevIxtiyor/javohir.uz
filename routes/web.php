@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,14 +31,26 @@ Route::prefix('/client')->as('client')->group(function ()
 
 Route::prefix('/admin')->as('admin.')->group(function ()
 {
-    Route::get('/users', [AdminController::class, 'users'])->name('users');
+
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::middleware('auth')->group(function () {
+    Route::prefix('/admin')->as('admin.')->group(function (){
+        Route::get('/dashboard',  [AdminController::class, 'dashboard'])->name('dashboard');
+
+        Route::get('/users', [AdminController::class, 'showUsers'])->name('users');
+        Route::get('/category', [AdminController::class, 'show_category'])->name('category');
+        Route::post('/category', [AdminController::class, 'category_post'])->name('category.post');
+        Route::get('/orders', [AdminController::class, 'show_orders'])->name('orders');
+
+    });
+
+    Route::prefix('/user')->as('user.')->group(function (){
+        Route::get('/dashboard',  [UserController::class, 'dashboard'])->name('dashboard');
+        Route::get('/orders',  [UserController::class, 'orders'])->name('orders');
+        Route::post('/orders',  [UserController::class, 'orders_post'])->name('orders.post');
+    });
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
