@@ -13,8 +13,16 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Asosiy') }}
                     </x-nav-link>
+
+                    @if(Auth::user()->role == "founder")
+                        <x-nav-link :href="route('admin.users')" :active="request()->routeIs('admin.users')">
+                            {{ __('Foydalanuvchilar') }}
+                        </x-nav-link>
+                    @endif
+
+
                 </div>
             </div>
 

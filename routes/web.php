@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\ClientController;
+use App\Http\Controllers\Admin\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,11 @@ Route::get('/', [ClientController::class, 'index'])->name('client.index');
 Route::prefix('/client')->as('client')->group(function ()
 {
     Route::get('/', [ClientController::class, 'index'])->name('index');
+});
+
+Route::prefix('/admin')->as('admin.')->group(function ()
+{
+    Route::get('/users', [AdminController::class, 'users'])->name('users');
 });
 
 Route::get('/dashboard', function () {

@@ -33,8 +33,8 @@
             </div>
             <div class="col-lg-5">
               <div class="hero-right">
-                <div class="hero-right-bg"></div>
-                <img src="{{asset("client/assets/images/author/hero.png")}}" alt="" />
+{{--                <div class="hero-right-bg"></div>--}}
+{{--                <img src="{{asset("client/assets/images/author/hero.png")}}" alt="" />--}}
               </div>
             </div>
           </div>
