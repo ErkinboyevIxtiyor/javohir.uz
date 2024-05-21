@@ -334,7 +334,7 @@
                   </p>
                   <div class="author-info">
                     <div class="image-container">
-                      <img src="{{("client/assets/images/testimonial/1.jpg")}}" alt="" />
+                      <img src="{{asset("client/assets/images/testimonial/1.jpg")}}" alt="" />
                     </div>
                     <div class="author-info-content">
                       <h3>Beseie Cooper</h3>
@@ -354,7 +354,7 @@
                   </p>
                   <div class="author-info">
                     <div class="image-container">
-                      <img src="./assets/images/testimonial/2.jpg" alt="" />
+                      <img src="{{asset("client/assets/images/testimonial/2.jpg")}}" alt="" />
                     </div>
                     <div class="author-info-content">
                       <h3>Mike Anderson</h3>
@@ -374,27 +374,27 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./assets/images/colaborators/1.png" alt=""
+                    ><img src="{{asset("client/assets/images/colaborators/1.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./assets/images/colaborators/2.png" alt=""
+                    ><img src="{{asset("client/assets/images/colaborators/2.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./assets/images/colaborators/3.png" alt=""
+                    ><img src="{{asset("client/assets/images/colaborators/3.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./assets/images/colaborators/4.png" alt=""
+                    ><img src="{{asset("client/assets/images/colaborators/4.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="swiper-slide">
                   <a href="#"
-                    ><img src="./assets/images/colaborators/5.png" alt=""
+                    ><img src="{{asset("client/assets/images/colaborators/5.png")}}" alt=""
                   /></a>
                 </div>
               </div>
@@ -405,10 +405,10 @@
       <section id="blog">
         <div class="container">
           <div class="section-title">
-            <p class="sub-title">My Blog</p>
+            <p class="sub-title">Bizning blogim</p>
             <h2>
-              Our Recent Updates, <br />
-              Blog, Tips, Tricks & More
+                Bizning so'nggi yangilanishlarimiz, <br>
+                blogimiz, maslahatlarimiz, fokuslarimiz va boshqalar
             </h2>
           </div>
           <div class="row blog-items">
@@ -416,7 +416,7 @@
               <div class="blog-item">
                 <div class="blog-image-container">
                   <a href="#blog-popup-1"
-                    ><img src="./assets/images/blog/1.png" alt=""
+                    ><img src="{{asset("client/assets/images/blog/1.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="blog-content">
@@ -434,7 +434,7 @@
                 <div id="blog-popup-1" class="mfp-fade mfp-hide">
                   <div class="content">
                     <div class="img">
-                      <img src="./assets/images/blog/1.png" alt="dora_img" />
+                      <img src="{{asset("client/assets/images/blog/2.png")}}" alt="dora_img" />
                     </div>
                     <div class="des">
                       <p class="category">
@@ -466,7 +466,7 @@
               <div class="blog-item">
                 <div class="blog-image-container">
                   <a href="#blog-popup-2"
-                    ><img src="./assets/images/blog/2.png" alt=""
+                    ><img src="{{asset("client/assets/images/blog/2.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="blog-content">
@@ -484,7 +484,7 @@
                 <div id="blog-popup-2" class="mfp-fade mfp-hide">
                   <div class="content">
                     <div class="img">
-                      <img src="./assets/images/blog/2.png" alt="dora_img" />
+                      <img src="{{asset("client/assets/images/blog/2.png")}}" alt="dora_img" />
                     </div>
                     <div class="des">
                       <p class="category"><span>Web Design</span> / 23.01.2023</p>
@@ -514,7 +514,7 @@
               <div class="blog-item">
                 <div class="blog-image-container">
                   <a href="#blog-popup-3"
-                    ><img src="./assets/images/blog/3.png" alt=""
+                    ><img src="{{asset("client/assets/images/blog/3.png")}}" alt=""
                   /></a>
                 </div>
                 <div class="blog-content">
@@ -533,7 +533,7 @@
                 <div id="blog-popup-3" class="mfp-fade mfp-hide">
                   <div class="content">
                     <div class="img">
-                      <img src="./assets/images/blog/3.png" alt="dora_img" />
+                      <img src="{{asset("client/assets/images/blog/4.png")}}" alt="dora_img" />
                     </div>
                     <div class="des">
                       <p class="category">
