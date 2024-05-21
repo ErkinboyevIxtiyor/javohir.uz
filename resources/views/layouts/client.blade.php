@@ -27,6 +27,7 @@
             <li><a href="#portfolio">Work</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="{{route('login')}}">Kirish</a></li>
           </ul>
           <div class="social-icons">
             <a href="#"><i class="fa-sharp fa-regular fa-basketball"></i></a>
