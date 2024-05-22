@@ -11,7 +11,8 @@ class UserController extends Controller
 {
     public function dashboard(Request $request)
     {
-        return view('user.dashboard');
+        $oredrCount = Order::where('user_id', auth()->id())->count();
+        return view('user.dashboard',  compact('oredrCount'));
     }
 
     public function orders(Request $request)

@@ -34,7 +34,7 @@
 
                   <div class="info-box-content">
                     <span class="info-box-text">Buyurtmalar soni</span>
-                    <span class="info-box-number">0</span>
+                    <span class="info-box-number">{{$oredrCount}}</span>
                   </div>
                   <!-- /.info-box-content -->
                 </div>

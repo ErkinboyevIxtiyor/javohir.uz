@@ -94,6 +94,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <a href="{{route('user.orders')}}" class="nav-link bg-danger"
+                                   onclick="event.preventDefault(); this.closest('form').submit();">
+                                    <i class="nav-icon fas fa-sign-out-alt"></i>
+                                    <p>
+                                        Chiqish
+                                    </p>
+                                </a>
+                            </form>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

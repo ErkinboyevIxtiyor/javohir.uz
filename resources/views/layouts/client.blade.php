@@ -54,7 +54,7 @@
             <a href="#"><i class="fa-brands fa-pinterest"></i></a>
           </div>
           <div class="copy-right-text">
-            Developed with love by <a href="#">Codeefly</a> © 2023
+            Developed with love by <a href="#">MaxDev</a> © {{date("Y")}}
           </div>
         </div>
       </footer>
